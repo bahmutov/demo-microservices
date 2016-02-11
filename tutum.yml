@@ -1,7 +1,7 @@
 site:
-  image: bahmutov/site
+  image: bahmutov/demo-microservices:site
   links:
-    - web
+    - addition
   ports:
     - "80:80"
   roles:
@@ -11,7 +11,7 @@ site:
     - SERVICE_PORT=20000
     - addition_PORT=10001
 addition:
-  image: bahmutov/addition
+  image: bahmutov/demo-microservices:addition
   environment:
     - SERVICE_HOST=0.0.0.0
     - SERVICE_PORT=20001
