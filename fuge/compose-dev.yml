@@ -1,0 +1,6 @@
+frontend:
+  build: ../site/
+  container_name: site
+addition:
+  build: ../addition/
+  container_name: addition
